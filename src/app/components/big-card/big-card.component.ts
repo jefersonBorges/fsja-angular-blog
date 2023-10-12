@@ -9,12 +9,16 @@ export class BigCardComponent implements OnInit {
 
   @Input()
   photoCover: string = ''
+
   @Input()
   cardTitle: string =  ''
+
   @Input()
-  cardDescription: string = `
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur doloremque, cumque sunt eos illum magnam corporis quis iure et officia aliquam saepe ab odit voluptatibus praesentium? Nam labore ipsam debitis
-  `
+  cardDescription: string = ''
+
+  @Input()
+  Id: string = '0'
+
   constructor() { }
 
   ngOnInit(): void {
